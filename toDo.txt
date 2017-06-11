@@ -1,0 +1,4 @@
+announcements to change to "main"
+announcements_entry model to change to "announcement"
+change appropriate settings for announcement to main change
+	
