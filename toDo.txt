@@ -1,4 +1,10 @@
-announcements to change to "main"
-announcements_entry model to change to "announcement"
-change appropriate settings for announcement to main change
-	
+#announcements to change to "main"
+#announcements_entry model to change to "announcement"
+#change appropriate settings for announcement to main change
+host static files (mp3s, videos)
+media page
+archive page
+friends of historic twosaints page
+#view 5 MOST RECENT announcements on home page
+#preview body of 1 MOST RECENT announcement on home page
+

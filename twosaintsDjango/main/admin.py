@@ -3,9 +3,9 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
-from .models import Entry
+from .models import Announcement
 
-class EntryAdmin(admin.ModelAdmin):
+class AnnouncementAdmin(admin.ModelAdmin):
 	list_display = ['date', 'title', 'body', 'upload']
 
-admin.site.register(Entry, EntryAdmin)
+admin.site.register(Announcement, AnnouncementAdmin)

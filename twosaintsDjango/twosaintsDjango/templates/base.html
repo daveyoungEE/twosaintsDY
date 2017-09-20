@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<html>
+{% load static %}
+<head>
+	<meta name="viewport" content="initial-scale=1.0" />
+	<link rel="stylesheet" href="{% static "style-test.css" %}" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>The Episcopal Church of St. Luke &amp; St. Simon Cyrene</title>
+
+</head>
+<body>
+<!-- container -->
+<div id="container">
+<!-- header -->
+<header id="header">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="95.000000pt" height="95.000000pt" viewBox="0 0 95.000000 95.000000"
+ preserveAspectRatio="xMidYMid meet" id="logo">
+
+<g transform="translate(0.000000,95.000000) scale(0.100000,-0.100000)"
+fill="#FFFFFF" stroke="#d6d6d6">
+<path d="M372 889 c-58 -29 -94 -85 -100 -153 l-4 -54 -48 -4 c-102 -10 -178
+-82 -188 -176 -11 -121 77 -222 193 -222 l45 0 0 -44 c0 -81 37 -138 114 -178
+30 -16 53 -19 98 -16 103 8 175 81 186 188 l4 48 54 4 c100 8 165 78 172 183
+3 48 0 70 -17 102 -35 70 -105 113 -183 113 -24 0 -28 4 -28 28 0 153 -159
+249 -298 181z m154 -58 c73 -33 96 -126 49 -195 -14 -20 -25 -43 -25 -51 0
+-22 44 -19 82 5 129 78 268 -85 171 -200 -43 -51 -146 -59 -183 -15 -7 8 -25
+15 -41 15 -37 0 -38 -25 -3 -77 22 -32 25 -46 21 -87 -4 -41 -11 -55 -41 -83
+-29 -27 -44 -33 -81 -33 -64 0 -103 23 -126 73 -24 54 -24 64 6 123 45 88 29
+104 -60 59 -52 -27 -82 -27 -137 1 -52 27 -75 115 -45 174 32 63 122 88 185
+50 46 -28 82 -27 82 4 0 13 -7 29 -15 36 -42 35 -37 136 9 179 44 41 93 49
+152 22z"/>
+</g>
+</svg>
+<h3 id="sub-site-name">The Episcopal Church of</h3>
+<h1 id="site-name"><a href="/">St. Luke &amp; St. Simon Cyrene</a></h1>
+<!-- nav -->
+<nav>
+	<ul id="header-nav">
+		<li><a href="/blog/">blog</a></li>
+		<li><a href="/calendar/">calendar</a></li>
+		<li><a href="/music/">music</a></li>
+		<li><a href="/">test</a></li>
+	</ul>
+</nav>
+<!-- end nav -->
+</header>
+<!-- end header -->
+
+<!-- splash -->
+<div id="splash">
+	<!-- <img src="parishphoto800px.png" alt="Splash"> -->
+</div>
+
+<!-- end splash -->
+
+<section class="secondaryContent"><h3>About Us</h3>
+<p>St. Luke & St. Simon Cyrene Episcopal Church—affectionately nicknamed "Two Saints"—is a diverse, joyful, and progressive congregation in the heart of Rochester, New York. </br>
+</br>
+We are an inclusive community of people, a family in faith who want to hear God’s word and follow Jesus in our daily lives. We feel strengthened by our diversity and by our unity in the breaking of the bread. Together we strive to be loving and forgiving towards ourselves and others. We try to honor all of God’s creation and not to be the instrument of our own or another’s oppression.</br>
+</br>
+We reach across our differences to embrace and support each other in nurturing corporate faith life. Together we use our talents in ministry to the urban community that encircles us, with God's guiding hand and blessing.</p>
+</section>
+<section class="secondaryContent">
+<h3>Announcements</h3>
+{% block content %}
+{% endblock content %}
+</section>
+
+<!-- footer -->
+<footer id="footer">
+	<ul id="footer-nav">
+		<li><a href="http://faceboook.com/twosaints">facebook</a></li>
+		<li><a href="http://twitter.com/twosaints">twitter</a></li>
+		<li><a href="http://plus.google.com/twosaints">google Plus</a></li>
+	</ul>
+</footer>
+<!-- end footer -->
+</div>
+<!-- end container -->
+<!-- javascript -->
+<script src="/static/script.js"></script>
+<!-- end javascript -->
+</body>
+</html>
