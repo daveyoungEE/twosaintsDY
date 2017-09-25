@@ -19,5 +19,7 @@ from main import views
 urlpatterns = [
 	url(r'^$', views.index, name='index'),
 	url(r'^announcement/(?P<id>\d+)/', views.announcement_detail, name='announcement_detail'),
+	url(r'^calendar/', views.calendar, name='calendar'),
+	url(r'^calendar/(?P<id>\d+)/', views.calendar_detail, name='calendar_detail'),
 	url(r'^admin/', admin.site.urls),
 ]

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Calendar</h3>
+<ul id="calendar">
+{% for event in events %}
+{% with event1=events[0] event2=events[0 + 1] %}
+{% if event1.date != event2.date %}
+<h4>{{ event.date }}</h4>
+{% endif %}
+<li class="calendar_event"><a href={% url 'calendar_detail' event.id %}>{{ event.title }}</a></br>{{ event.description|linebreaks }}</li>
+{% endfor %}
+</ul>
+
+{% endblock content %}

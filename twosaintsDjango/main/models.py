@@ -10,3 +10,9 @@ class Announcement(models.Model):
 	body = models.TextField()
 	upload = models.FileField(upload_to='uploads/Announcement/%Y/%m/%d/', blank=True, null=True)
 	
+class Event(models.Model):
+	date = models.DateField()
+	time = models.TimeField()
+	title = models.TextField(max_length=64)
+	description = models.TextField()
+	
