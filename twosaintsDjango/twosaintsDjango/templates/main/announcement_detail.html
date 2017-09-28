@@ -1,6 +1,6 @@
-{% extends "base_secondary.html" %}
+{% extends "base.html" %}
 
 {% block content %}
-<h3>{{annoucement.date}} &mdash; {{ announcement.title }}</h3>
-<p>{{ announcement.body }}</p>
+<h4>{{ announcement.date }} &mdash; {{ announcement.title }}</h4>
+<p>{{ announcement.body|linebreaks }}</p>
 {% endblock content %}
