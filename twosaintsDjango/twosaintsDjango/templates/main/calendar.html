@@ -1,16 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-
 <h3>Calendar</h3>
-<ul id="calendar">
+<div id="calendar">
+<iframe src="https://calendar.google.com/calendar/embed?src=choi.brandon.h%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+<h3>Upcoming Events</h3>
+<ul>
 {% for event in events %}
-{% with event1=events[0] event2=events[0 + 1] %}
-{% if event1.date != event2.date %}
 <h4>{{ event.date }}</h4>
-{% endif %}
 <li class="calendar_event"><a href={% url 'calendar_detail' event.id %}>{{ event.title }}</a></br>{{ event.description|linebreaks }}</li>
 {% endfor %}
 </ul>
-
 {% endblock content %}
