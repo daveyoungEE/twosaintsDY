@@ -2,11 +2,11 @@
 
 {% block content %}
 <h3>Calendar</h3>
-<div id="calendar">
+<div class="calendar">
 <iframe src="https://calendar.google.com/calendar/embed?src=choi.brandon.h%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 <h3>Upcoming Events</h3>
-<ul>
+<ul class="calendar">
 {% for event in events %}
 <h4>{{ event.date }}</h4>
 <li class="calendar_event"><a href={% url 'calendar_detail' event.id %}>{{ event.title }}</a></br>{{ event.description|linebreaks }}</li>
