@@ -42,7 +42,7 @@ def archive(request):
 		})
 
 def blog(request):
-	return HttpResponse('blog doesn't exist')
+	return HttpResponse('blog does not exist')
 
 def music(request):
 	return render(request, 'main/music.html')
