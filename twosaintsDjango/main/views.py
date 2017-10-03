@@ -42,10 +42,7 @@ def archive(request):
 		})
 
 def music(request):
-        return HttpResponse('<p>Under construction</p>')
-
-def blog(request):
-	return HttpResponse('<p>Under construction</p>')
+	return render(request, 'main/music.html')
 
 def media(request):
-	return HttpResponse('<p>Under construction</p>')
+	return render(request, 'main/media.html')
