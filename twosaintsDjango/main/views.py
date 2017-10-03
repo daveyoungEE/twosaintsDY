@@ -41,6 +41,9 @@ def archive(request):
 		'announcements': announcements,
 		})
 
+def blog(request):
+	return HttpResponse('blog doesn't exist')
+
 def music(request):
 	return render(request, 'main/music.html')
 
