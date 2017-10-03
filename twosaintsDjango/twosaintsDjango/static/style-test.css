@@ -131,9 +131,10 @@ color: #343a37;
 
 .calendar {
 text-align: center;
+margin-left: -15px;
 }
 
-.calendar ul li {
+.calendar ul {
 padding: 0;
 }
 #footer {
