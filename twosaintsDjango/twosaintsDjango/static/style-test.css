@@ -1,7 +1,6 @@
 body {
 font-family: Georgia, Times, serif; 
 background-color: #fcfffd;
-
 }
 
 a {
@@ -26,7 +25,6 @@ padding-top: 20px;
 background-image: url("twoSaints_glass2.png");
 background-repeat: no-repeat;
 background-size: cover;
-
 }
 
 #sub-site-name {
@@ -109,6 +107,20 @@ background-image: url("parishphoto800px.png");
 background-repeat: no-repeat;
 background-size: cover;
 padding:0;
+text-align: center;
+}
+#splash #welcome {
+font-size: 56px;
+font-family: Georgia;
+color: white;
+margin-top: 0;
+padding-top: 160px;
+display: none;
+text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
 }
 #highlightedAnnouncement {
 margin-left: -40px;

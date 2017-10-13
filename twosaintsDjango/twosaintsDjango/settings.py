@@ -25,7 +25,10 @@ SECRET_KEY = '(lo!0af)0@xgeaf^yk(ut8m)-lz=2c7e)po(#n6z*+ny#d&#ik'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['chuisu.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'chuisu.pythonanywhere.com',
+]
 
 
 # Application definition
