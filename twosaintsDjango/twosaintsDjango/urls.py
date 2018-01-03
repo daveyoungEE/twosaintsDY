@@ -23,6 +23,7 @@ urlpatterns = [
 	url(r'^calendar/(?P<id>\d+)/', views.calendar_detail, name='calendar_detail'),
 	url(r'^archive/', views.archive, name='archive'),
 	url(r'^blog/', views.blog, name='blog'),
+	url(r'^blog/(?P<id>\d+)/', views.blog_detail, name='blog_detail'),
 	url(r'^media/', views.media, name='media'),
 	url(r'^music/', views.music, name='music'),
 	url(r'^admin/', admin.site.urls),

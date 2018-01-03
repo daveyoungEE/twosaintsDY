@@ -5,13 +5,17 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from main.models import Announcement
 from main.models import Event
+from main.models import Blog
 from django.http import Http404
 
 def index(request):
 	announcements = Announcement.objects.all().order_by('-date')
+	blogEntries = Blog.objects.all().order_by('-date')
 	return render(request, 'main/index.html',{
 		'announcements': announcements,
+		'blogEntries': blogEntries,
 		})
+
 def announcement_detail(request, id):
 	try:
 		announcement = Announcement.objects.get(id=id)
@@ -21,11 +25,27 @@ def announcement_detail(request, id):
 			'announcement': announcement,
 		})
 
+def blog(request):
+	blogEntries = Blog.objects.all().order_by('-date')
+	return render(request, 'main/blog.html',{
+		'blogEntries': blogEntries,
+		})
+
+def blog_detail(request, id):
+	try:
+		blogEntry = Blog.objects.get(id=id)
+	except Blog.DoesNotExsit:
+                raise Http(404) ('this blog entry does not exist')
+	return render(request, 'main/blog_detail.html', {
+			'blogEntry': blogEntry,
+		})
+
 def calendar(request):
 	events = Event.objects.all().order_by('-date')
 	return render(request, 'main/calendar.html',{
 		'events': events,
 		})
+
 def calendar_detail(request, id):
 	try:
 		event = Event.objects.get(id=id).order_by('-date')
@@ -40,9 +60,6 @@ def archive(request):
 	return render(request, 'main/archive.html', {
 		'announcements': announcements,
 		})
-
-def blog(request):
-	return HttpResponse('blog does not exist')
 
 def music(request):
 	return render(request, 'main/music.html')

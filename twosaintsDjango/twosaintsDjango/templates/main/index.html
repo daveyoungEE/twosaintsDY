@@ -17,6 +17,22 @@ We are an inclusive community of people, a family in faith who want to hear Godâ
 </br>
 We reach across our differences to embrace and support each other in nurturing corporate faith life. Together we use our talents in ministry to the urban community that encircles us, with God's guiding hand and blessing.</p>
 </section>
+
+<section class="secondaryContent">
+<a href="/blog"><h3>Blog</h3></a>
+<ul>
+{% for blogEntry in blogEntries|slice:":1" %}
+
+<li><a href="{%url 'blog_detail' blogEntry.id %}">{{ blogEntry.date }} &mdash; {{ blogEntry.title }}</a></li>
+<p>
+{{ blogEntry.body|linebreaks }}
+</p>
+
+{% endfor %}
+</ul>
+<a href="/blog">see more...</a>
+</section>
+
 <section class="secondaryContent">
 <h3>Announcements</h3>
 <ul>
@@ -36,4 +52,6 @@ We reach across our differences to embrace and support each other in nurturing c
 {% endif %}
 {% endfor %}
 </ul>
+<a href="/archive">see more...</a>
+</section>
 {% endblock content %}
