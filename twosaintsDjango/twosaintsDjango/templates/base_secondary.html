@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html>
+{% load static %}
+<head>
+	<meta name="viewport" content="initial-scale=1.0" />
+	<link rel="stylesheet" href="{% static "style-secondary.css" %}" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="{% static "jquery.js" %}"></script>
+	<title>The Episcopal Church of St. Luke &amp; St. Simon Cyrene</title>
+
+</head>
+<body>
+<!-- container -->
+<div id="container">
+<!-- header -->
+<header id="header">
+<!-- nav -->
+<nav>
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="95.000000pt" height="95.000000pt" viewBox="0 0 95.000000 95.000000"
+ preserveAspectRatio="xMidYMid meet" id="logo">
+
+<g transform="translate(0.000000,95.000000) scale(0.040000,-0.040000)"
+fill="#FFFFFF" stroke="#d6d6d6">
+<path d="M372 889 c-58 -29 -94 -85 -100 -153 l-4 -54 -48 -4 c-102 -10 -178
+-82 -188 -176 -11 -121 77 -222 193 -222 l45 0 0 -44 c0 -81 37 -138 114 -178
+30 -16 53 -19 98 -16 103 8 175 81 186 188 l4 48 54 4 c100 8 165 78 172 183
+3 48 0 70 -17 102 -35 70 -105 113 -183 113 -24 0 -28 4 -28 28 0 153 -159
+249 -298 181z m154 -58 c73 -33 96 -126 49 -195 -14 -20 -25 -43 -25 -51 0
+-22 44 -19 82 5 129 78 268 -85 171 -200 -43 -51 -146 -59 -183 -15 -7 8 -25
+15 -41 15 -37 0 -38 -25 -3 -77 22 -32 25 -46 21 -87 -4 -41 -11 -55 -41 -83
+-29 -27 -44 -33 -81 -33 -64 0 -103 23 -126 73 -24 54 -24 64 6 123 45 88 29
+104 -60 59 -52 -27 -82 -27 -137 1 -52 27 -75 115 -45 174 32 63 122 88 185
+50 46 -28 82 -27 82 4 0 13 -7 29 -15 36 -42 35 -37 136 9 179 44 41 93 49
+152 22z"/>
+</g>
+</svg>
+	<ul id="header-nav">
+		<li><a href="/">HOME</a></li>
+		<li id="navBlog"><a href="/blog/">BLOG</a></li>
+		<li><a href="/calendar/">CALENDAR</a></li>
+		<li><a href="/music/">MUSIC</a></li>
+		<li><a href="/media/">MEDIA</a></li>
+		<li><a href="/archive">ARCHIVE</a></li>
+		<li><a href="/friendsof">PATRONS</a></li>
+	</ul>
+</nav>
+<!-- end nav -->
+</header>
+<!-- end header -->
+
+<section class="secondaryContent">
+{% block content %}
+{% endblock content %}
+</section>
+
+<!-- footer -->
+<footer id="footer">
+	<ul id="footer-nav">
+		<li><a href="http://faceboook.com/twosaints">FACEBOOK</a></li>
+		<li><a href="http://twitter.com/twosaints">TWITTER</a></li>
+		<li><a href="http://plus.google.com/twosaints">GOOGLE PLUS</a></li>
+	</ul>
+</footer>
+<!-- end footer -->
+</div>
+<!-- end container -->
+<!-- javascript -->
+<script src="/static/script.js"></script>
+<!-- end javascript -->
+</body>
+</html>
