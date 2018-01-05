@@ -22,7 +22,11 @@ margin-left: -15px;
 margin-right: -15px;
 margin-top: -15px;
 padding-top: 20px;
-background-image: url("twoSaints_glass2.png");
+}
+
+#site-banner {
+height: 100%;
+background-image: url("main_header.png");
 background-repeat: no-repeat;
 background-size: cover;
 }

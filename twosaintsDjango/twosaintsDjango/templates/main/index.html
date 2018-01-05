@@ -3,9 +3,15 @@
 {% block content %}
 
 <!-- splash -->
-<div id="splash">
-	<!-- <img src="parishphoto800px.png" alt="Splash"> -->
-<h3 id="welcome">Welcome to Two Saints!</h3>
+<div class="w3-display-container">
+	<img class="mySlides w3-animate-right" src="static/Ageless worship_family choir.png" style="width:100%">
+	<img class="mySlides w3-animate-right" src="static/Connect.png" style="width:100%">
+	<img class="mySlides w3-animate-right" src="static/Eucharist.png" style="width:100%">
+	<img class="mySlides w3-animate-right" src="static/Jazz Vespers green.png" style="width:100%">
+	<img class="mySlides w3-animate-right" src="static/Mission poster.png" style="width:100%">
+	<img class="mySlides w3-animate-right" src="static/Sunday Services.png" style="width:100%">
+	<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
 
 <!-- end splash -->
@@ -54,4 +60,39 @@ We reach across our differences to embrace and support each other in nurturing c
 </ul>
 <a href="/archive">see more...</a>
 </section>
+<script>
+var myIndex = 0;
+var slideIndex = 1;
+carousel();
+
+function carousel() {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	myIndex++;
+	if (myIndex > x.length) {myIndex = 1}
+	x[myIndex-1].style.display = "block";
+	setTimeout(carousel, 11000);
+}
+
+showDivs(slideIndex);
+
+function plusDivs(n) {
+	showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	if (n > x.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = x.length} ;
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	x[slideIndex-1].style.display = "block";
+}
+</script>
+
 {% endblock content %}
