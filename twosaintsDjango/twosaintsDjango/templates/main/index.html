@@ -1,9 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-
 <!-- splash -->
-<div class="w3-display-container">
+<div class="w3-display-container splash">
 	<img class="mySlides w3-animate-right" src="static/Ageless worship_family choir.png" style="width:100%">
 	<img class="mySlides w3-animate-right" src="static/Connect.png" style="width:100%">
 	<img class="mySlides w3-animate-right" src="static/Eucharist.png" style="width:100%">
@@ -15,7 +14,7 @@
 </div>
 
 <!-- end splash -->
-
+<section class="secondaryContent">
 <h3>About Two Saints</h3>
 <p>St. Luke & St. Simon Cyrene Episcopal Church—affectionately nicknamed "Two Saints"—is a diverse, joyful, and progressive congregation in the heart of Rochester, New York. </br>
 </br>
@@ -35,9 +34,11 @@ We reach across our differences to embrace and support each other in nurturing c
 </p>
 
 {% endfor %}
+
+</section>
+
 </ul>
 <a href="/blog">see more...</a>
-</section>
 
 <section class="secondaryContent">
 <h3>Announcements</h3>
@@ -59,7 +60,6 @@ We reach across our differences to embrace and support each other in nurturing c
 {% endfor %}
 </ul>
 <a href="/archive">see more...</a>
-</section>
 <script>
 var myIndex = 0;
 var slideIndex = 1;
