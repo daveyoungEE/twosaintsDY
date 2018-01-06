@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     'chuisu.pythonanywhere.com',
     'twosaints.org',
     '192.168.0.21',
+    'www.brandonchoi.com',
 ]
 
 
