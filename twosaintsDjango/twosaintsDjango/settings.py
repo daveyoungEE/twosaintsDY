@@ -133,4 +133,4 @@ STATICFILES_DIRS = [
 	os.path.join(BASE_DIR, 'twosaintsDjango', 'static'),
 	]
 	
-# STATIC_ROOT = '/var/www/example.com/static/'
+STATIC_ROOT = '/twosaintsDjango/static/'
