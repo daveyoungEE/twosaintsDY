@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'chuisu.pythonanywhere.com',
-    'twosaints.org',
+    'twosaints.pythonanywhere.com',
+    'www.twosaints.org',
     '192.168.0.21',
     'www.brandonchoi.com',
 ]
