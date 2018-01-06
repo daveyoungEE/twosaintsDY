@@ -3,13 +3,14 @@
 {% block content %}
 <h3>Calendar</h3>
 <div class="calendar">
-<iframe src="https://calendar.google.com/calendar/embed?src=choi.brandon.h%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=twosaintschurch%40gmail.com&ctz=America%2FNew_York" style="border: 0; width: 100%; height: 720px; margin-bottom: 33px;" frameborder="0" scrolling="no"></iframe>
 </div>
-<h3>Upcoming Events</h3>
+<!-- <h3>Upcoming Events</h3>
 <ul class="calendar">
 {% for event in events %}
 <h4>{{ event.date }}</h4>
 <li class="calendar_event"><a href={% url 'calendar_detail' event.id %}>{{ event.title }}</a></br>{{ event.description|linebreaks }}</li>
 {% endfor %}
 </ul>
+-->
 {% endblock content %}
