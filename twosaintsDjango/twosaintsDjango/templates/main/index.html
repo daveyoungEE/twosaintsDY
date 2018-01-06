@@ -5,9 +5,9 @@
 <div class="w3-display-container splash">
 	<img class="mySlides w3-animate-right" src="static/carousel5_welcome.png" style="width:100%">
 	<img class="mySlides w3-animate-right" src="static/carousel4_sundays.png" style="width:100%">
-	<img class="mySlides w3-animate-right" src="static/carousel1_ageless.png" style="width:100%">
 	<img class="mySlides w3-animate-right" src="static/carousel2_eucharist.png" style="width:100%">
 	<img class="mySlides w3-animate-right" src="static/carousel3_jazz.png" style="width:100%">
+	<img class="mySlides w3-animate-right" src="static/carousel1_ageless.png" style="width:100%">
 	<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 	<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
@@ -15,7 +15,7 @@
 <!-- end splash -->
 <section class="secondaryContent">
 <h3>About Two Saints</h3>
-<p>St. Luke & St. Simon Cyrene Episcopal Church—affectionately nicknamed "Two Saints"—is a diverse, joyful, and progressive congregation in the heart of Rochester, New York. </br>
+<p id="about-content">St. Luke & St. Simon Cyrene Episcopal Church—affectionately nicknamed "Two Saints"—is a diverse, joyful, and progressive congregation in the heart of Rochester, New York. </br>
 </br>
 We are an inclusive community of people, a family in faith who want to hear God’s word and follow Jesus in our daily lives. We feel strengthened by our diversity and by our unity in the breaking of the bread. Together we strive to be loving and forgiving towards ourselves and others. We try to honor all of God’s creation and not to be the instrument of our own or another’s oppression.</br>
 </br>
@@ -27,10 +27,10 @@ We reach across our differences to embrace and support each other in nurturing c
 <ul>
 {% for blogEntry in blogEntries|slice:":1" %}
 
-<li><a href="{%url 'blog_detail' blogEntry.id %}">{{ blogEntry.date }} &mdash; {{ blogEntry.title }}</a></li>
-<p>
+<li id="highlightedBlog"><a href="{%url 'blog_detail' blogEntry.id %}">{{ blogEntry.date }} &mdash; {{ blogEntry.title }}</a></li>
+<li><p>
 {{ blogEntry.body|linebreaks }}
-</p>
+</p></li>
 
 {% endfor %}
 
@@ -44,9 +44,9 @@ We reach across our differences to embrace and support each other in nurturing c
 
 {% if forloop.counter == 1 %}
 <li id="highlightedAnnouncement"><a href="{% url 'announcement_detail' announcement.id %}">{{ announcement.date }} &mdash; {{ announcement.title }}</a></li>
-<p>
+<li><p>
 {{ announcement.body|linebreaks }}
-</p>
+</p></li>
 
 {% endif %}
 {% if forloop.counter > 1 %}
@@ -57,6 +57,7 @@ We reach across our differences to embrace and support each other in nurturing c
 {% endfor %}
 </ul>
 <a href="/archive">see more...</a>
+</section>
 <script>
 var myIndex = 0;
 var slideIndex = 1;

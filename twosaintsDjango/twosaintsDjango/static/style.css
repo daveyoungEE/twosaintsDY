@@ -109,8 +109,19 @@ list-style-type: none;
 
 }
 
+.secondaryContent li p {
+margin-left: -40px;
+}
+
 .splash {
 margin-top: -15px;
+}
+
+
+#highlightedBlog {
+margin-left: -40px;
+margin-right: 0;
+font-weight: bold;
 }
 
 #highlightedAnnouncement {
@@ -140,7 +151,9 @@ margin-left: -15px;
 .calendar ul {
 padding: 0;
 }
+
 #footer {
+margin-top:33px;
 margin-left: -15px;
 margin-right: -15px;
 background-color: #a71b2c;
@@ -167,4 +180,8 @@ color: white;
 
 .mySlides {
 display:none;
+}
+
+#about-content  {
+text-align: center;
 }
