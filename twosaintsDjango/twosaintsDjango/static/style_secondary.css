@@ -85,7 +85,11 @@ text-transform: uppercase;
 
 .secondaryContent ul {
 list-style-type: none;
-margin-left: -33px;
+margin-left: -40px;
+}
+
+#contactInfo h3, #contactInfo h4 {
+text-align: left;
 }
 
 #splash {
