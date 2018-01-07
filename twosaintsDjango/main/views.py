@@ -66,3 +66,6 @@ def music(request):
 
 def media(request):
 	return render(request, 'main/media.html')
+
+def contact(request):
+	return render(request, 'main/contact.html')

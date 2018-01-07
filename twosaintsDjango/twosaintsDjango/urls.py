@@ -27,5 +27,5 @@ urlpatterns = [
 	url(r'^media/', views.media, name='media'),
 	url(r'^music/', views.music, name='music'),
 	url(r'^admin/', admin.site.urls),
-
+	url(r'^contact/', views.contact name='contact'),
 ]
