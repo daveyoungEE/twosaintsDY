@@ -1,6 +1,8 @@
 {% extends "base_secondary.html" %}
 
 {% block content %}
+
+<h3>Announcements</h3>
 <ul>
 {% for announcement in announcements %}
 <li><a href="{% url 'announcement_detail' announcement.id %}">{{ announcement.date }} &mdash; {{ announcement.title }}</a></li>
