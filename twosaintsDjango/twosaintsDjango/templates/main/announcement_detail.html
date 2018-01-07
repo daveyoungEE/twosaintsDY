@@ -1,6 +1,8 @@
 {% extends "base_secondary.html" %}
 
 {% block content %}
+<section class="secondaryContent">
 <h4>{{ announcement.date }} &mdash; {{ announcement.title }}</h4>
 <p>{{ announcement.body|linebreaks }}</p>
+</section>
 {% endblock content %}

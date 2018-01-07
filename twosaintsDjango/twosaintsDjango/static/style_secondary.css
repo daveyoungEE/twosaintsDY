@@ -38,13 +38,13 @@ height: 33px;
 
 
 nav ul {
-font-family: Avenir Next, arial, Sans-Serif;
+font-family: "Avenir Next", "Avenir", Helvetica, Arial, Sans-Serif;
 margin-top: -59px;
 padding-top: 16px;
 padding-bottom: 16px;
 list-style-type: none ;
 text-align: right;
-background-color: #a71b2c;
+background-color: #b00300;
 }
 
 nav ul li {
@@ -61,7 +61,7 @@ color: #e6e600;
 }
 
 .secondaryContent {
-font-family: Arial, sans-serif;
+font-family: "Avenir Next", "Avenir", Helvetica, Arial, Sans-Serif;
 color: #343a37;
 letter-spacing: .5px;
 line-height: 1.5;
@@ -70,18 +70,22 @@ margin-right: 99px;
 margin-top: 33px;
 }
 
-.secondaryContent h3 {
+.secondaryContent h3, h3.secondaryContent {
 text-align: center;
 font-size: 40px;
+font-family: "Bodoni 72", Georgia, "Times New Roman", Serif;
+text-transform: uppercase;
 }
 .secondaryContent h4 {
 text-align:center;
 font-size: 30px;
+font-family: "Bodoni 72", Georgia, "Times New Roman", Serif;
+text-transform: uppercase;
 }
 
 .secondaryContent ul {
 list-style-type: none;
-
+margin-left: -33px;
 }
 
 #splash {
@@ -145,9 +149,9 @@ padding: 0;
 margin-top: 66px;
 bottom: 0;
 width: 100%;
-background-color: #a71b2c;
+background-color: #b00300;
 padding: 20px;
-font-family: arial, sans-serif;
+font-family: "Avenir Next", "Avenir", Helvetica, Arial, Sans-Serif;
 color: white;
 }
 

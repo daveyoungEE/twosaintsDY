@@ -7,10 +7,13 @@
 <ul>
 {% for blogEntry in blogEntries %}
  
-<li><a href="{%url 'blog_detail' blogEntry.id %}">{{ blogEntry.date }} &mdash; {{ blogEntry.title }}</a></li>
+<li>
+<a href="{%url 'blog_detail' blogEntry.id %}"><h4>{{ blogEntry.title }}</h4></a>
+<p>{{ blogEntry.date }}</p>
 <p>
 {{ blogEntry.body|linebreaks }}
 </p>
+</li>
  
 {% endfor %}
 </ul>
