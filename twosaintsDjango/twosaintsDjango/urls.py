@@ -26,6 +26,6 @@ urlpatterns = [
 	url(r'^blog/(?P<id>\d+)/', views.blog_detail, name='blog_detail'),
 	url(r'^media/', views.media, name='media'),
 	url(r'^music/', views.music, name='music'),
+	url(r'^contact/', views.contact, name='contact'),
 	url(r'^admin/', admin.site.urls),
-	url(r'^contact/', views.contact name='contact'),
 ]
