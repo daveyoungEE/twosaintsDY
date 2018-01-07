@@ -27,32 +27,32 @@ margin-top: -0px;
 }
 
 svg {
-margin-top: -73px;
+margin-top: -78px;
 text-align: left;
 margin-left: 0;
 }
 
 #nav {
-height: 33px;
+height: auto;
 }
 
 
 nav ul {
 font-family: "Avenir Next", "Avenir", Helvetica, Arial, Sans-Serif;
-margin-top: -59px;
-padding-top: 16px;
-padding-bottom: 16px;
+margin-top: -58px;
+padding-top: 1vh;
+padding-bottom: 1vh;
 list-style-type: none ;
 text-align: right;
 background-color: #b00300;
 }
 
 nav ul li {
-margin-left: 20px;
-margin-right: 20px;
+margin-left: 2%;
+margin-right: 2%;
 display: inline;
 color: white;
-font-size: 16px;
+font-size: 1vw;
 }
 
 nav ul #navBlog a {

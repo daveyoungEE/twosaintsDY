@@ -69,19 +69,20 @@ nav ul {
 font-family: "Avenir Next", "Avenir", Helvetica, Arial, Sans-Serif;
 margin-left: -15px;
 margin-top: 0px;
-padding-top: 16px;
-padding-bottom: 16px;
+padding-top: 1vh;
+padding-bottom: 1vh;
 list-style-type: none ;
 text-align: center;
 background-color: #b00300;
+height: auto;
 }
 
 
 nav ul li {
-margin-left: 20px;
-margin-right: 20px;
+margin-left: 2%;
+margin-right: 2%;
 display: inline;
-font-size: 16px;
+font-size: 1vw;
 }
 
 nav ul #navBlog a {
