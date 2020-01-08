@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
     'www.twosaints.org',
     '192.168.0.21',
     'www.brandonchoi.com',
+    'daveyoungee.pythonanywhere.com',
 ]
 
 
