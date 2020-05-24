@@ -69,3 +69,6 @@ def media(request):
 
 def contact(request):
 	return render(request, 'main/contact.html')
+
+def children(request):
+	return render(request, 'main/children.html')
