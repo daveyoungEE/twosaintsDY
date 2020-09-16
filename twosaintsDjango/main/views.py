@@ -72,3 +72,6 @@ def contact(request):
 
 def children(request):
 	return render(request, 'main/children.html')
+
+def donate(request):
+	return render(request, 'main/donate.html')
