@@ -28,5 +28,6 @@ urlpatterns = [
 	url(r'^music/', views.music, name='music'),
 	url(r'^contact/', views.contact, name='contact'),
 	url(r'^children/', views.children, name='children'),
+	url(r'^donate/', views.donate, name='donate'),
 	url(r'^admin/', admin.site.urls),
 ]
